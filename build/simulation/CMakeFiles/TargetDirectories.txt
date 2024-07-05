@@ -1,0 +1,9 @@
+/home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/uninstall.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/simulation_uninstall.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/test.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/edit_cache.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/rebuild_cache.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/list_install_components.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/install.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/install/local.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/install/strip.dir
