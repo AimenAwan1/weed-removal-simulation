@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="multi_agent_robot">
+  
+  <xacro:property name="namespace1" default="my_robot1"/>
+  <xacro:property name="namespace2" default="my_robot2"/>
+  <xacro:property name="namespace3" default="my_robot3"/>
+  <xacro:arg name="tf_prefix1" default="${namespace1}"/>
+  <xacro:arg name="tf_prefix2" default="${namespace2}"/>
+  <xacro:arg name="tf_prefix3" default="${namespace3}"/>
+  <xacro:arg name="description_pkg_arg" default="name_description"/>
+  <xacro:arg name="webots_pkg_arg" default="name_webots"/>
+  <xacro:property name="webots_pkg" value="$(arg webots_pkg_arg)"/>
+
+  <xacro:macro name="webots_device" params="namespace">
+      <device reference="${namespace}/ds0" type="DistanceSensor">
+        <ros>
+          <topicName>${namespace}/left_sensor</topicName>
+          <alwaysOn>true</alwaysOn>
+        </ros>
+      </device>
+      <device reference="${namespace}/ds1" type="DistanceSensor">
+        <ros>
+          <topicName>${namespace}/right_sensor</topicName>
+          <alwaysOn>true</alwaysOn>
+        </ros>
+      </device>
+  </xacro:macro>
+  <webots>
+  <xacro:webots_device namespace="${namespace1}"/>
+  <xacro:webots_device namespace="${namespace2}"/>
+  <xacro:webots_device namespace="${namespace3}"/>
+  <plugin type="${webots_pkg}.my_robot_driver_multi.MyRobotDriver" />
+  </webots>
+</robot>

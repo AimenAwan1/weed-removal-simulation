@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="name">
+  <xacro:arg name="namespace_arg" default=""/>
+  <xacro:arg name="tf_prefix_arg" default="$(arg namespace_arg)"/>
+  <xacro:arg name="description_pkg_arg" default="name_description"/>
+  <xacro:arg name="webots_pkg_arg" default="name_webots"/>
+  <xacro:property name="description_pkg" value="$(arg description_pkg_arg)"/>
+  <xacro:property name="webots_pkg" value="$(arg webots_pkg_arg)"/>
+
+  
+  <xacro:include filename="$(find ${description_pkg})/robot/dynamics/name.xacro"/>
+
+  <webots>
+    <device reference="ds0" type="DistanceSensor">
+      <ros>
+          <topicName>/left_sensor</topicName>
+          <alwaysOn>true</alwaysOn>
+      </ros>
+    </device>
+    <device reference="ds1" type="DistanceSensor">
+      <ros>
+          <topicName>/right_sensor</topicName>
+          <alwaysOn>true</alwaysOn>
+      </ros>
+    </device>
+    <plugin type="${webots_pkg}.my_robot_driver.MyRobotDriver" />
+  </webots>
+</robot>
