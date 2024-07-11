@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="name_fleet">
+
+  <xacro:arg name="description_pkg_arg" default="name_description"/>
+  <xacro:arg name="gazebo_pkg_arg" default="name_ign"/>
+  
+  <xacro:property name="description_pkg" value="$(arg description_pkg_arg)"/>
+  <xacro:property name="gazebo_pkg" value="$(arg gazebo_pkg_arg)"/>
+  
+  <xacro:include filename="$(find ${description_pkg})/robot/namespace/dynamics/name.xacro"/>
+  <xacro:include filename="$(find ${gazebo_pkg})/robot/namespace/graphics.gazebo.xacro"/>
+  <xacro:include filename="$(find ${gazebo_pkg})/robot/namespace/sensor.gazebo.xacro"/> 
+  <xacro:include filename="$(find ${gazebo_pkg})/robot/namespace/controller.gazebo.xacro"/> 
+  
+  <xacro:macro name="robot_with_plugins" params="description_pkg gazebo_pkg namespace">  
+    <xacro:robot description_pkg="${description_pkg}" namespace="${namespace}"/>
+    <xacro:gazebo_graphics namespace="${namespace}"/> 
+    <xacro:sensors_plugins namespace="${namespace}"/>
+    <xacro:controller_interface namespace="${namespace}"/>   
+  </xacro:macro>
+  <xacro:macro name="ground_truth" params="namespace p0 r0">  
+    <joint name="${namespace}/ground_truth_pose" type="floating">
+      <origin xyz="${p0}" rpy="${r0}"/>
+      <parent link="world"/>
+      <child link="${namespace}/base_footprint"/>
+    </joint>
+    **** primitive joint composition ****
+  </xacro:macro>
+
+  <link name="world"/>
+</robot>
