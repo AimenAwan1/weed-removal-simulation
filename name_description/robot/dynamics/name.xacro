@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="name">
+    <!-- include all visual xacro files -->
+    <xacro:arg name="description_pkg_arg" default="name_description"/>
+    <xacro:property name="description_pkg" value="$(arg description_pkg_arg)"/>
+
+    <xacro:include filename="$(find ${description_pkg})/robot/visual/properties.xacro"/>
+    <xacro:include filename="$(find ${description_pkg})/robot/visual/chassis.xacro"/>
+    <xacro:include filename="$(find ${description_pkg})/robot/visual/wheel.xacro"/>
+    <xacro:include filename="$(find ${description_pkg})/robot/visual/castor.xacro"/>
+    <xacro:include filename="$(find ${description_pkg})/robot/visual/sensor.xacro"/>
+
+    <!-- include all dynamics xacro files -->
+    <xacro:include filename="$(find ${description_pkg})/robot/dynamics/properties.xacro"/>
+    <xacro:include filename="$(find ${description_pkg})/robot/dynamics/chassis.xacro"/>
+    <xacro:include filename="$(find ${description_pkg})/robot/dynamics/wheel.xacro"/>
+    <xacro:include filename="$(find ${description_pkg})/robot/dynamics/castor.xacro"/>
+    <xacro:include filename="$(find ${description_pkg})/robot/dynamics/pole.xacro"/>
+    
+    <xacro:chassis/>
+    <xacro:wheel_set/>
+    <xacro:castor_set/>
+    <xacro:pole_set/>
+    <xacro:sensor_link/>
+    
+</robot>

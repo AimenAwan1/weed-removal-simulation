@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:property name="params_path" value="$(find ${description_pkg})/config/properties.yaml"/> 
+    <xacro:property name="mp" value="${xacro.load_yaml(params_path)}"/> 
+    
+    <!-- Wheel Inertial Properties -->
+    <xacro:property name="WHEEL_M" value="${mp['castor_mass']}"/>
+    <xacro:property name="WHEEL_COM" value="${mp['castor_com']}"/>
+    <xacro:property name="WHEEL_IXX" value="${mp['castor_inertia_xx']}"/>
+    <xacro:property name="WHEEL_IYY" value="${mp['castor_inertia_yy']}"/>
+    <xacro:property name="WHEEL_IZZ" value="${mp['castor_inertia_zz']}"/>
+    <xacro:property name="WHEEL_IXY" value="${mp['castor_inertia_xy']}"/>
+    <xacro:property name="WHEEL_IXZ" value="${mp['castor_inertia_xz']}"/>
+    <xacro:property name="WHEEL_IYZ" value="${mp['castor_inertia_yz']}"/>
+    
+    <!-- Base Inertial Properties -->
+    <xacro:property name="BASE_M" value="${mp['base_mass']}"/>
+    <xacro:property name="BASE_COM" value="${mp['base_com']}"/>
+    <xacro:property name="BASE_IXX" value="${mp['base_inertia_xx']}"/>
+    <xacro:property name="BASE_IYY" value="${mp['base_inertia_yy']}"/>
+    <xacro:property name="BASE_IZZ" value="${mp['base_inertia_zz']}"/>
+    <xacro:property name="BASE_IXY" value="${mp['base_inertia_xy']}"/>
+    <xacro:property name="BASE_IXZ" value="${mp['base_inertia_xz']}"/>
+    <xacro:property name="BASE_IYZ" value="${mp['base_inertia_yz']}"/>
+    
+    <!-- Castor Inertial Properties -->
+    <xacro:property name="CASTOR_M" value="${mp['castor_mass']}"/>
+    <xacro:property name="CASTOR_COM" value="${mp['castor_com']}"/>
+    <xacro:property name="CASTOR_IXX" value="${mp['castor_inertia_xx']}"/>
+    <xacro:property name="CASTOR_IYY" value="${mp['castor_inertia_yy']}"/>
+    <xacro:property name="CASTOR_IZZ" value="${mp['castor_inertia_zz']}"/>
+    <xacro:property name="CASTOR_IXY" value="${mp['castor_inertia_xy']}"/>
+    <xacro:property name="CASTOR_IXZ" value="${mp['castor_inertia_xz']}"/>
+    <xacro:property name="CASTOR_IYZ" value="${mp['castor_inertia_yz']}"/>
+</robot>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="castor" params="suffix_x suffix_y namespace">
+    <link name="${namespace}/castor_${suffix_x}_${suffix_y}">
+      <xacro:castor_visual/>
+      <inertial>
+        <origin xyz="${CASTOR_COM}" rpy="0.0 0.0 0.0"/>
+        <mass value="${CASTOR_M}"/>
+        <inertia ixx="${CASTOR_IXX}" ixy="${CASTOR_IXY}" ixz="${CASTOR_IXZ}" iyy="${CASTOR_IYY}" iyz="${CASTOR_IYZ}" izz="${CASTOR_IZZ}"/>
+      </inertial>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+          <cylinder radius="${CASTOR_RADIUS}" length="${CASTOR_THICKNESS}"/>
+        </geometry>
+      </collision>
+    </link>
+    <xacro:castor_joint suffix_x="${suffix_x}" suffix_y="${suffix_y}" namespace="${namespace}"/>    
+  </xacro:macro>
+  
+  <!-- Contents-->
+  <xacro:macro name="castor_set" params="namespace">
+    <xacro:castor suffix_x="front" suffix_y="left" namespace="${namespace}"/>
+    <xacro:castor suffix_x="front" suffix_y="right" namespace="${namespace}"/>
+    <xacro:castor suffix_x="rear" suffix_y="left" namespace="${namespace}"/>
+    <xacro:castor suffix_x="rear" suffix_y="right" namespace="${namespace}"/>
+  </xacro:macro>
+  
+</robot>
