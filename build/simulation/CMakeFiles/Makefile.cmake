@@ -974,4 +974,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/simulation_uninstall.dir/DependInfo.cmake"
+  "CMakeFiles/diff_drive_publisher.dir/DependInfo.cmake"
   )

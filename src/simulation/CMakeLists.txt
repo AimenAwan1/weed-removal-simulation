@@ -13,13 +13,14 @@ find_package(rclcpp REQUIRED)
 
 install(DIRECTORY
   launch
+  src
   src/worlds
   config
   DESTINATION share/${PROJECT_NAME}
 )
 
 add_executable(diff_drive_publisher src/diff_drive_publisher.cpp)
-amment_target_dependencies(diff_drive_publisher
+ament_target_dependencies(diff_drive_publisher
   rclcpp
   geometry_msgs
   )

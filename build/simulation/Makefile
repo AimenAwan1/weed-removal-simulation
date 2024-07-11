@@ -197,6 +197,43 @@ simulation_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation_uninstall.dir/build.make CMakeFiles/simulation_uninstall.dir/build
 .PHONY : simulation_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named diff_drive_publisher
+
+# Build rule for target.
+diff_drive_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 diff_drive_publisher
+.PHONY : diff_drive_publisher
+
+# fast build rule for target.
+diff_drive_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff_drive_publisher.dir/build.make CMakeFiles/diff_drive_publisher.dir/build
+.PHONY : diff_drive_publisher/fast
+
+src/diff_drive_publisher.o: src/diff_drive_publisher.cpp.o
+.PHONY : src/diff_drive_publisher.o
+
+# target to build an object file
+src/diff_drive_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff_drive_publisher.dir/build.make CMakeFiles/diff_drive_publisher.dir/src/diff_drive_publisher.cpp.o
+.PHONY : src/diff_drive_publisher.cpp.o
+
+src/diff_drive_publisher.i: src/diff_drive_publisher.cpp.i
+.PHONY : src/diff_drive_publisher.i
+
+# target to preprocess a source file
+src/diff_drive_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff_drive_publisher.dir/build.make CMakeFiles/diff_drive_publisher.dir/src/diff_drive_publisher.cpp.i
+.PHONY : src/diff_drive_publisher.cpp.i
+
+src/diff_drive_publisher.s: src/diff_drive_publisher.cpp.s
+.PHONY : src/diff_drive_publisher.s
+
+# target to generate assembly for a file
+src/diff_drive_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff_drive_publisher.dir/build.make CMakeFiles/diff_drive_publisher.dir/src/diff_drive_publisher.cpp.s
+.PHONY : src/diff_drive_publisher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... simulation_uninstall"
 	@echo "... uninstall"
+	@echo "... diff_drive_publisher"
+	@echo "... src/diff_drive_publisher.o"
+	@echo "... src/diff_drive_publisher.i"
+	@echo "... src/diff_drive_publisher.s"
 .PHONY : help
 
 

@@ -1,5 +1,6 @@
 /home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/uninstall.dir
 /home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/simulation_uninstall.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/diff_drive_publisher.dir
 /home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/test.dir
 /home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/edit_cache.dir
 /home/aimen/auto-weed-removal/ros2_ws/build/simulation/CMakeFiles/rebuild_cache.dir

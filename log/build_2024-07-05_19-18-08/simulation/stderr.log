@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/aimen/auto-weed-removal/ros2_ws/src/simulation/worlds": No such file
+  or directory.
+
+[0m
