@@ -41,7 +41,8 @@ def generate_launch_description():
     #    ])
     #])
 
-    """ robot_description_path = PathJoinSubstitution([
+    """ from tutorial
+    robot_description_path = PathJoinSubstitution([
     FindPackageShare('simulation'), 'src', 'worlds', 'building_robot.sdf'
     ])
 
