@@ -1,0 +1,27 @@
+- package: controller_manager
+  executable: spawner
+  arguments:
+  - joint_state_broadcaster
+  - --controller-manager
+  - controller_manager
+  - --controller-manager-timeout
+  - "20"
+- package: controller_manager
+  executable: spawner
+  arguments: 
+  - velocity_controllers
+  - --controller-manager
+  - controller_manager
+- package: name_description
+  executable: inverse_kinematics.py
+  remappings:
+  - - cmd_vel
+    - adapter_cmd_vel
+  - - wheel_velocity
+    - velocity_controllers/commands
+- package: name_gazebo
+  executable: turtle_teleop_key_adapter.py
+  remappings:
+  - - output_cmd_vel
+    - adapter_cmd_vel
+  output: screen

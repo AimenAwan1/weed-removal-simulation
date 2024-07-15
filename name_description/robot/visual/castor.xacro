@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Castor Visual-->
+  <xacro:macro name="castor_visual" params="">
+    <visual>
+      <geometry>
+        <cylinder radius="${CASTOR_RADIUS}" length="${CASTOR_THICKNESS}"/>
+      </geometry>
+      <material name="castor_color">
+        <color rgba="${CASTOR_COLOR}"/>
+      </material>
+    </visual>
+  </xacro:macro>
+
+  <!-- Castor Joint-->
+  <xacro:macro name="castor_joint" params="suffix_x suffix_y">
+    <joint name="castor_joint_${suffix_x}_${suffix_y}" type="continuous">
+      <xacro:if value="${suffix_x=='front'}">
+        <xacro:property name="direction_x" value="1"/>
+      </xacro:if>
+      <xacro:unless value="${suffix_x=='front'}">
+        <xacro:property name="direction_x" value="-1"/>
+      </xacro:unless>
+      <xacro:if value="${suffix_y=='left'}">
+        <xacro:property name="direction_y" value="1"/>
+      </xacro:if>
+      <xacro:unless value="${suffix_y=='left'}">
+        <xacro:property name="direction_y" value="-1"/>
+      </xacro:unless>
+      <origin 
+        xyz="
+          ${CASTOR_SEPARATION_X/2*direction_x} 
+          ${CASTOR_SEPARATION_Y/2*direction_y} 
+          ${CASTOR_RADIUS-(BASE_HEIGHT/2+BASE_ELEVATION)+0.001}
+        "
+        rpy="${-PI/2} 0 0"
+      />
+      <parent link="base_link"/>
+      <child link="castor_${suffix_x}_${suffix_y}"/>
+      <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- Castor rviz-->
+  <xacro:macro name="castor_rviz" params="suffix_x suffix_y">
+    <link name="castor_${suffix_x}_${suffix_y}">
+      <xacro:castor_visual/>
+    </link>
+    <xacro:castor_joint suffix_x="${suffix_x}" suffix_y="${suffix_y}"/>
+  </xacro:macro>
+  <!-- Contents-->
+  <xacro:macro name="castor_set_visual" params="">
+    <xacro:castor_rviz suffix_x="front" suffix_y="left"/>
+    <xacro:castor_rviz suffix_x="front" suffix_y="right"/>
+    <xacro:castor_rviz suffix_x="rear" suffix_y="left"/>
+    <xacro:castor_rviz suffix_x="rear" suffix_y="right"/>
+  </xacro:macro>
+  
+</robot>

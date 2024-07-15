@@ -1,0 +1,4 @@
+description_package: name_description
+model_path: /name_ign/robot/namespace/name.gazebo.xacro
+controller_config_path: /name_ign/config/controller_config.yaml
+model_name: name

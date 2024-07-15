@@ -1,0 +1,63 @@
+# wheel visual properties 
+wheel_radius: "0.08"
+wheel_thickness: "0.04"
+wheel_separation: "0.45"
+wheel_color: "0 0 0 1"
+# wheel inertial properties 
+wheel_mass: "2.9"
+wheel_com: "0 0 0"
+wheel_inertia_xx: "0.005"
+wheel_inertia_yy: "0.005"
+wheel_inertia_zz: "0.01"
+wheel_inertia_xy: "0"
+wheel_inertia_xz: "0"
+wheel_inertia_yz: "0"
+
+# base visual properties 
+base_length: "0.65"
+base_width: "0.55"
+base_height: "0.25"
+base_elevation: "0.04"
+base_mesh_file: "coconut.stl"
+base_mesh_z_offset: "0.018"
+base_color: "1 1 1 1"
+# base inertial properties 
+base_mass: "40.0"
+base_com: "0.0002 0.0001 -0.0001"
+base_inertia_xx: "1.793666667"
+base_inertia_yy: "1.286666667"
+base_inertia_zz: "0.530966667"
+base_inertia_xy: "0"
+base_inertia_xz: "0"
+base_inertia_yz: "0"
+# castor visual properties 
+castor_radius: "0.035"
+castor_thickness: "0.02"
+castor_separation_x: "0.46"
+castor_separation_y: "0.32"
+castor_color: "0.5 0.5 0 1" 
+# castor inertial properties 
+castor_mass: "0.2"
+castor_com: "0 0 0"
+castor_inertia_xx: "0.04"
+castor_inertia_yy: "0.04"
+castor_inertia_zz: "0.04"
+castor_inertia_xy: "0"
+castor_inertia_xz: "0"
+castor_inertia_yz: "0"
+
+# pole contact properties
+pole_radius: "0.015"
+pole_height: "0.05"
+pole_separation_x: "0.47"
+pole_separation_y: "0.4"
+ # lidar visual properties 
+lidar_radius: "0.035"
+lidar_thickness: "0.04"
+lidar_offset: "0.22"
+
+# camera visual properties 
+camera_offset: "0.317"
+camera_height: "0.1"
+  
+  

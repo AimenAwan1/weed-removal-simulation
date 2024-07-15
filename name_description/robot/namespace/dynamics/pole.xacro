@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="pole" params="suffix_x suffix_y namespace">
+        <link name="${namespace}/pole_${suffix_x}_${suffix_y}">
+            <collision>
+                <geometry>
+                    <cylinder radius="${POLE_RADIUS}" length="${POLE_HEIGHT}"/>
+                </geometry>
+            </collision>      
+        </link>
+        <joint name="${namespace}/pole_joint_${suffix_x}_${suffix_y}" type="fixed">
+            <xacro:if value="${suffix_x=='front'}">
+                <xacro:property name="direction_x" value="1"/>
+            </xacro:if>
+            <xacro:unless value="${suffix_x=='front'}">
+                <xacro:property name="direction_x" value="-1"/>
+            </xacro:unless>
+            <xacro:if value="${suffix_y=='left'}">
+                <xacro:property name="direction_y" value="1"/>
+            </xacro:if>
+            <xacro:unless value="${suffix_y=='left'}">
+                <xacro:property name="direction_y" value="-1"/>
+            </xacro:unless>
+            <origin xyz="${POLE_SEPARATION_X/2*direction_x} ${POLE_SEPARATION_Y/2*direction_y} ${(BASE_HEIGHT+POLE_HEIGHT)/2}"/>
+            <parent link="${namespace}/base_link"/>
+            <child link="${namespace}/pole_${suffix_x}_${suffix_y}"/>
+        </joint>  
+    </xacro:macro>
+    <xacro:macro name="pole_set" params="namespace">
+        <xacro:pole suffix_x="front" suffix_y="left" namespace="${namespace}"/>
+        <xacro:pole suffix_x="front" suffix_y="right" namespace="${namespace}"/>
+        <xacro:pole suffix_x="rear" suffix_y="left" namespace="${namespace}"/>
+        <xacro:pole suffix_x="rear" suffix_y="right" namespace="${namespace}"/>
+  </xacro:macro>
+</robot>
