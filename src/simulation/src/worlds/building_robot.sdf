@@ -357,8 +357,8 @@
                 </parameters>
             </plugin>
             -->
-            <plugin
-                filename="ign_ros2_control-system"
+            <plugin 
+                filename="ign_ros2_control-system" 
                 name="ign_ros2_control::IgnitionROS2ControlPlugin">
                 <parameters>$(find simulation)/config/diff_drive_controller.yaml
                 </parameters>

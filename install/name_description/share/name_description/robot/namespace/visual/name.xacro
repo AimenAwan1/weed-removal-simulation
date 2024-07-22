@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="name">
+    
+    <xacro:macro name="robot_visual" params="description_pkg namespace">
+        <xacro:include filename="$(find ${description_pkg})/robot/namespace/visual/properties.xacro"/>
+        <xacro:include filename="$(find ${description_pkg})/robot/namespace/visual/chassis.xacro"/>
+        <xacro:include filename="$(find ${description_pkg})/robot/namespace/visual/wheel.xacro"/>
+        <xacro:include filename="$(find ${description_pkg})/robot/namespace/visual/castor.xacro"/>
+        <xacro:include filename="$(find ${description_pkg})/robot/namespace/visual/sensor.xacro"/>
+        <xacro:chassis_visual namespace="${namespace}"/>
+        <xacro:wheel_set_visual namespace="${namespace}"/>
+        <xacro:castor_set_visual namespace="${namespace}"/>
+        <xacro:sensor_link namespace="${namespace}"/>
+    </xacro:macro>
+</robot>

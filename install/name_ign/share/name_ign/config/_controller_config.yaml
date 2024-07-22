@@ -1,0 +1,30 @@
+? ''
+: controller_manager:
+    ros__parameters:
+      effort_controllers:
+        type: effort_controllers/JointGroupEffortController
+      joint_state_broadcaster:
+        type: joint_state_broadcaster/JointStateBroadcaster
+      update_rate: 100
+      velocity_controllers:
+        type: velocity_controllers/JointGroupVelocityController
+  effort_controllers:
+    ros__parameters:
+      command_interface:
+      - effort
+      joints:
+      - wheel_joint_left
+      - wheel_joint_right
+      state_interface:
+      - velocity
+      - effort
+  velocity_controllers:
+    ros__parameters:
+      command_interface:
+      - velocity
+      joints:
+      - wheel_joint_left
+      - wheel_joint_right
+      state_interface:
+      - velocity
+      - effort

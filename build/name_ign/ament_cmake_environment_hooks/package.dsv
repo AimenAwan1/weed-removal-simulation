@@ -1,0 +1,4 @@
+source;share/name_ign/local_setup.bash
+source;share/name_ign/local_setup.dsv
+source;share/name_ign/local_setup.sh
+source;share/name_ign/local_setup.zsh

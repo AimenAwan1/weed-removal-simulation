@@ -1,0 +1,8 @@
+setup.py
+name_description/__init__.py
+name_description/config_modifier.py
+name_description/dummy_module.py
+name_description.egg-info/PKG-INFO
+name_description.egg-info/SOURCES.txt
+name_description.egg-info/dependency_links.txt
+name_description.egg-info/top_level.txt

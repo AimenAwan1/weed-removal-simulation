@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="sensors_plugins" params="namespace"> 
+    <xacro:property name="imu_link" value="${namespace}/imu_link"/>
+    <xacro:property name="imu_topic" value="${namespace}/imu"/>
+    <xacro:property name="lidar_link" value="${namespace}/lidar_link"/>
+    <xacro:property name="lidar_topic" value="${namespace}/scan"/>
+    <xacro:property name="camera_optical" value="${namespace}/camera_optical"/>
+    <xacro:property name="camera_topic" value="${namespace}/camera/image_raw"/>
+    <xacro:property name="camera_info_topic" value="${namespace}/camera/camera_info"/>
+    <xacro:property name="joint_state_topic" value="${namespace}/joint_states"/>
+  
+    <!--joint ideal sensor-->
+    <gazebo>
+        <plugin filename="gz-sim-joint-state-publisher-system"
+            name="gz::sim::systems::JointStatePublisher">
+            <topic>joint_states</topic> <!--from <ros><remapping> -->
+            <joint_name>${namespace}/wheel_joint_left</joint_name>
+            <joint_name>${namespace}/wheel_joint_right</joint_name>
+            <joint_name>${namespace}/castor_joint_front_left</joint_name>
+            <joint_name>${namespace}/castor_joint_front_right</joint_name>
+            <joint_name>${namespace}/castor_joint_rear_left</joint_name>
+            <joint_name>${namespace}/castor_joint_rear_right</joint_name>
+        </plugin>
+    </gazebo>
+        <!-- imu -->
+        <gazebo reference="${namespace}/imu_link">
+            <gravity>true</gravity>
+            <sensor name="${namespace}/imu" type="imu">
+                <always_on>1</always_on>
+                <update_rate>10</update_rate>
+                <visualize>true</visualize>
+                <topic>${namespace}/imu</topic>
+                <gz_frame_id>${namespace}/imu_link</gz_frame_id>
+                <imu>
+                    <angular_velocity>
+                      <x>
+                        <noise type="gaussian">
+                          <mean>3.0</mean>
+                          <stddev>2e-4</stddev>
+                        </noise>
+                      </x>
+                      <y>
+                        <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>2e-4</stddev>
+                        </noise>
+                      </y>
+                      <z>
+                        <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>2e-4</stddev>
+                        </noise>
+                      </z>
+                    </angular_velocity>
+                    <linear_acceleration>
+                      <x>
+                        <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>1.7e-2</stddev>
+                        </noise>
+                      </x>
+                      <y>
+                        <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>1.7e-2</stddev>
+                        </noise>
+                      </y>
+                      <z>
+                        <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>1.7e-2</stddev>
+                        </noise>
+                      </z>
+                    </linear_acceleration>
+                  </imu>
+            </sensor>
+        </gazebo> 
+            
+        <!-- lidar-->
+        <gazebo reference="${namespace}/lidar_link">
+            <sensor type="gpu_lidar" name="${namespace}/lidar">
+                <pose>0 0 0 0 0 0</pose>
+                <visualize>true</visualize>
+                <always_on>true</always_on>
+                <update_rate>40</update_rate>
+                <topic>${namespace}/scan</topic>
+                <gz_frame_id>${namespace}/lidar_link</gz_frame_id>
+                <lidar>
+                    <scan>
+                        <horizontal>
+                            <samples>720</samples>
+                            <resolution>1</resolution>
+                            <min_angle>-3.1415926</min_angle>
+                            <max_angle>3.1415926</max_angle>
+                        </horizontal>
+                    </scan>
+                    <range>
+                        <min>0.05</min>
+                        <max>2.0</max>
+                        <resolution>0.03</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.03</stddev>
+                    </noise>
+                  </lidar>
+            </sensor>
+        </gazebo>
+        <gazebo reference="${namespace}/camera_optical">
+            <sensor type="camera" name="${namespace}/front_camera">
+                <update_rate>20.0</update_rate>
+                <topic>${namespace}/camera/image_raw</topic>
+                <gz_frame_id>${namespace}/camera_optical</gz_frame_id>
+                <camera name="d435">
+                    <camera_info_topic>${namespace}/camera/camera_info</camera_info_topic>
+                    <horizontal_fov>1.3962634</horizontal_fov>
+                    <image>
+                        <width>1600</width>
+                        <height>900</height>
+                        <format>R8G8B8</format>
+                    </image>
+                    <clip>
+                        <near>0.005</near>
+                        <far>10.0</far>
+                    </clip>
+                    <distortion>
+                        <k1>0.0</k1>
+                        <k2>0.0</k2>
+                        <k3>0.0</k3>
+                        <p1>0.0</p1>
+                        <p2>0.0</p2>
+                    </distortion>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.007</stddev>
+                    </noise>
+                </camera>
+            </sensor>        
+        </gazebo> 
+    </xacro:macro>
+</robot>

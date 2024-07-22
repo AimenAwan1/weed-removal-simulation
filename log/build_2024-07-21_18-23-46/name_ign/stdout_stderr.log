@@ -1,0 +1,71 @@
+Built target ament_cmake_python_copy_name_ign
+running egg_info
+writing name_ign.egg-info/PKG-INFO
+writing dependency_links to name_ign.egg-info/dependency_links.txt
+writing top-level names to name_ign.egg-info/top_level.txt
+reading manifest file 'name_ign.egg-info/SOURCES.txt'
+writing manifest file 'name_ign.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_name_ign_egg
+-- Install configuration: ""
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/environment/pythonpath.sh
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/environment/pythonpath.dsv
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign-0.0.0-py3.10.egg-info
+-- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign-0.0.0-py3.10.egg-info/top_level.txt
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign/__init__.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign/dummy_module.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign/spawner.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign/sdf_modifier.py
+Listing '/home/aimen/auto-weed-removal/ros2_ws/install/name_ign/local/lib/python3.10/dist-packages/name_ign'...
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/lib/name_ign/dummy_script.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/config
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/config/fleet_info.yaml
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/config/ros_gz_bridge.yaml
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/config/node_config.yaml
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/config/global_bridge.yaml
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/config/config.rviz
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/config/model_info_config.yaml
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/config/controller_config.yaml
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/config/cart_controller_velocity.yaml
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/launch
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/launch/test.launch.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/launch/ideal_fleet_spawn.launch.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/launch/cart_example_velocity.launch.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/launch/crew_spawn.launch.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/launch/fleet_spawn.launch.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/launch/first_spawn.launch.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/launch/ideal_fleet_spawn_2.launch.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/launch/empty_world.launch.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/launch/single_spawn.launch.py
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/name.gazebo.xacro
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/namespace
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/namespace/name.gazebo.xacro
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/namespace/controller.gazebo.xacro
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/namespace/sensor.gazebo.xacro
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/namespace/graphics.gazebo.xacro
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/controller.gazebo.xacro
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/sensor.gazebo.xacro
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/graphics.gazebo.xacro
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/test_cart_velocity.xacro.urdf
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/robot/cart.gazebo.xacro
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/world
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/world/empty.sdf
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/ament_index/resource_index/package_run_dependencies/name_ign
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/ament_index/resource_index/parent_prefix_path/name_ign
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/environment/ament_prefix_path.sh
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/environment/path.sh
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/environment/path.dsv
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/local_setup.bash
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/local_setup.sh
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/local_setup.zsh
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/local_setup.dsv
+-- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/package.dsv
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/ament_index/resource_index/packages/name_ign
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/cmake/name_ignConfig.cmake
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/cmake/name_ignConfig-version.cmake
+-- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_ign/share/name_ign/package.xml

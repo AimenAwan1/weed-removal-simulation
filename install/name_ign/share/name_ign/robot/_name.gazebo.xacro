@@ -1,0 +1,19 @@
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="name">
+  <xacro:arg name="namespace_arg" default="" />
+  <xacro:arg name="tf_prefix_arg" default="$(arg namespace_arg)" />
+  <xacro:arg name="description_pkg_arg" default="name_description" />
+  <xacro:arg name="gazebo_pkg_arg" default="name_ign" />
+  
+  <xacro:property name="description_pkg" value="$(arg description_pkg_arg)" />
+  <xacro:property name="gazebo_pkg" value="$(arg gazebo_pkg_arg)" />
+  
+  
+  <xacro:include filename="$(find ${description_pkg})/robot/dynamics/name.xacro" />
+  
+  
+  <xacro:include filename="$(find ${gazebo_pkg})/robot/graphics.gazebo.xacro" />
+  <xacro:include filename="$(find ${gazebo_pkg})/robot/sensor.gazebo.xacro" /> 
+  <xacro:include filename="$(find ${gazebo_pkg})/robot/controller.gazebo.xacro" /> 
+  <xacro:gazebo_graphics /> 
+  <xacro:sensors_plugins namespace="$(arg namespace_arg)" frame_prefix="$(arg tf_prefix_arg)" />
+<xacro:velocity_controller namespace="" gazebo_pkg="name_ign" is_fleet="false" /></robot>

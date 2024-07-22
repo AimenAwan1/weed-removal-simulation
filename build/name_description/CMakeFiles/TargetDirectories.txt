@@ -1,0 +1,11 @@
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/uninstall.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/name_description_uninstall.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/ament_cmake_python_copy_name_description.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/ament_cmake_python_build_name_description_egg.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/test.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/edit_cache.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/rebuild_cache.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/list_install_components.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/install.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/install/local.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_description/CMakeFiles/install/strip.dir

@@ -1,0 +1,11 @@
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/uninstall.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/name_ign_uninstall.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/ament_cmake_python_copy_name_ign.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/ament_cmake_python_build_name_ign_egg.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/test.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/edit_cache.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/rebuild_cache.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/list_install_components.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/install.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/install/local.dir
+/home/aimen/auto-weed-removal/ros2_ws/build/name_ign/CMakeFiles/install/strip.dir

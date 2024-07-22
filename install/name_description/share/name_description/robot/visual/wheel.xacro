@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Wheel Visual-->
+  <xacro:macro name="wheel_visual" params="">
+    <visual>
+      <geometry>
+        <cylinder radius="${WHEEL_RADIUS}" length="${WHEEL_THICKNESS}"/>
+      </geometry>
+      <material name="wheel_color">
+        <color rgba="${WHEEL_COLOR}"/>
+      </material>
+    </visual>
+  </xacro:macro>
+
+  <!-- Wheel Joint-->
+  <xacro:macro name="wheel_joint" params="suffix">
+    <joint name="wheel_joint_${suffix}" type="continuous">
+      <xacro:if value="${suffix=='left'}">
+        <xacro:property name="direction" value="1"/>
+      </xacro:if>
+      <xacro:unless value="${suffix=='left'}">
+        <xacro:property name="direction" value="-1"/>
+      </xacro:unless>        
+      <origin 
+        xyz="
+          0.0 
+          ${WHEEL_SEPARATION/2*direction} 
+          ${WHEEL_RADIUS-(BASE_HEIGHT/2+BASE_ELEVATION)}
+        " 
+        rpy="${-PI/2} 0 0"
+      />
+      <parent link="base_link"/>
+      <child link="wheel_${suffix}"/>
+      <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- Wheel rviz-->
+  <xacro:macro name="wheel_rviz" params="suffix">
+    <link name="wheel_${suffix}">
+      <xacro:wheel_visual/>
+    </link>
+    <xacro:wheel_joint suffix="${suffix}"/> 
+  </xacro:macro>
+
+  <!-- Contents-->
+  <xacro:macro name="wheel_set_visual" params="">
+    <xacro:wheel_rviz suffix="left"/>
+    <xacro:wheel_rviz suffix="right"/>
+  </xacro:macro>
+</robot>

@@ -1,0 +1,9 @@
+setup.py
+name_ign/__init__.py
+name_ign/dummy_module.py
+name_ign/sdf_modifier.py
+name_ign/spawner.py
+name_ign.egg-info/PKG-INFO
+name_ign.egg-info/SOURCES.txt
+name_ign.egg-info/dependency_links.txt
+name_ign.egg-info/top_level.txt
