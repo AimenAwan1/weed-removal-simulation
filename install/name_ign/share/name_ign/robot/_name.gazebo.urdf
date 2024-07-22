@@ -429,6 +429,25 @@
 			</camera>
 		</sensor>
 	</gazebo>
+	<!-- DiffDrive plugin for odometry -->
+	<gazebo>
+		<plugin filename="libgazebo_ros_diff_drive.so" name="diff_drive">
+			<ros>
+				<namespace></namespace>
+				<remapping>
+					<remap from="odom" to="/odom"/>
+				</remapping>
+			</ros>
+			<left_joint>/wheel_joint_left</left_joint>
+			<right_joint>/wheel_joint_left</right_joint>
+			<wheel_separation>0.45</wheel_separation>
+			<wheel_radius>0.08</wheel_radius>
+			<command_timeout>0.1</command_timeout>
+			<publish_odometry>true</publish_odometry>
+			<odometry_frame>/odom_frame</odometry_frame>
+			<global_frame>/odom_frame</global_frame>
+		</plugin>
+	</gazebo>
 	<ros2_control name="IgnitionSystem" type="system">
 		<hardware>
 			<plugin>ign_ros2_control/IgnitionSystem</plugin>

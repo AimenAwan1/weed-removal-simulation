@@ -37,12 +37,12 @@ class InverseKinematicsController(Node):
         self.target_position = None
         self.current_position = Point()
 
-        self.kp_linear = 1.0
-        self.ki_linear = 0.1
-        self.kd_linear = 0.05
-        self.kp_angular = 2.0
-        self.ki_angular = 0.1
-        self.kd_angular = 0.05
+        self.kp_linear = 0.5
+        self.ki_linear = 0.005
+        self.kd_linear = 0.001
+        self.kp_angular = 1.0
+        self.ki_angular = 0.01
+        self.kd_angular = 0.01
 
         self.prev_error_linear = 0.0
         self.integral_linear = 0.0
@@ -67,6 +67,8 @@ class InverseKinematicsController(Node):
         current_time = self.get_clock().now()
         dt = (current_time - self.prev_time).nanoseconds / 1e9
         self.prev_time = current_time
+
+        self.get_logger().info(f'current x: {self.current_position.x}, current y: {self.current_position.y}')
 
         #position error
         dx = self.target_position.x - self.current_position.x
@@ -99,8 +101,8 @@ class InverseKinematicsController(Node):
             angular_velocity = 0.0
             self.get_logger().info('Target reached, stopped the robot')
 
-        self.cmd_vel.linear.x = linear_velocity
-        self.cmd_vel.angular.z = angular_velocity
+        self.cmd_vel.linear.x = 0.1 * linear_velocity
+        self.cmd_vel.angular.z = 0.1 * angular_velocity
 
         cmd = Float64MultiArray()
         cmd.data = self.inverse_kinematics(self.cmd_vel.linear.x, self.cmd_vel.angular.z)

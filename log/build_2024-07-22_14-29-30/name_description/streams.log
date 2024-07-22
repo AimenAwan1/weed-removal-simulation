@@ -1,0 +1,80 @@
+[0.009s] Invoking command in '/home/aimen/auto-weed-removal/ros2_ws/build/name_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/aimen/auto-weed-removal/ros2_ws/build/name_description -- -j20 -l20
+[0.109s] Built target ament_cmake_python_copy_name_description
+[0.293s] running egg_info
+[0.294s] writing name_description.egg-info/PKG-INFO
+[0.294s] writing dependency_links to name_description.egg-info/dependency_links.txt
+[0.294s] writing top-level names to name_description.egg-info/top_level.txt
+[0.296s] reading manifest file 'name_description.egg-info/SOURCES.txt'
+[0.297s] writing manifest file 'name_description.egg-info/SOURCES.txt'
+[0.312s] Built target ament_cmake_python_build_name_description_egg
+[0.320s] Invoked command in '/home/aimen/auto-weed-removal/ros2_ws/build/name_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/aimen/auto-weed-removal/ros2_ws/build/name_description -- -j20 -l20
+[0.348s] Invoking command in '/home/aimen/auto-weed-removal/ros2_ws/build/name_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/aimen/auto-weed-removal/ros2_ws/build/name_description
+[0.357s] -- Install configuration: ""
+[0.357s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/environment/pythonpath.sh
+[0.357s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/environment/pythonpath.dsv
+[0.358s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/local/lib/python3.10/dist-packages/name_description-0.0.0-py3.10.egg-info
+[0.358s] -- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/local/lib/python3.10/dist-packages/name_description-0.0.0-py3.10.egg-info/PKG-INFO
+[0.358s] -- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/local/lib/python3.10/dist-packages/name_description-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.358s] -- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/local/lib/python3.10/dist-packages/name_description-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.358s] -- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/local/lib/python3.10/dist-packages/name_description-0.0.0-py3.10.egg-info/top_level.txt
+[0.358s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/local/lib/python3.10/dist-packages/name_description
+[0.358s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/local/lib/python3.10/dist-packages/name_description/__init__.py
+[0.358s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/local/lib/python3.10/dist-packages/name_description/dummy_module.py
+[0.358s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/local/lib/python3.10/dist-packages/name_description/config_modifier.py
+[0.386s] Listing '/home/aimen/auto-weed-removal/ros2_ws/install/name_description/local/lib/python3.10/dist-packages/name_description'...
+[0.390s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/lib/name_description/inverse_kinematics.py
+[0.390s] -- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/lib/name_description/inverse_kinematics_controller.py
+[0.390s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/lib/name_description/goal_publisher.py
+[0.390s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/launch
+[0.390s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/launch/display.launch.py
+[0.390s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot
+[0.390s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace
+[0.390s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/dynamics
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/dynamics/wheel.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/dynamics/castor.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/dynamics/name.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/dynamics/chassis.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/dynamics/pole.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/dynamics/properties.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/visual
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/visual/wheel.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/visual/castor.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/visual/name.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/visual/chassis.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/visual/sensor.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/namespace/visual/properties.xacro
+[0.391s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/dynamics
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/dynamics/wheel.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/dynamics/castor.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/dynamics/name.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/dynamics/chassis.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/dynamics/pole.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/dynamics/properties.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/visual
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/visual/wheel.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/visual/castor.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/visual/name.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/visual/chassis.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/visual/sensor.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/robot/visual/properties.xacro
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/meshes
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/meshes/coconut.stl
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/config
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/config/config.rviz
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/config/properties.yaml
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/ament_index/resource_index/package_run_dependencies/name_description
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/ament_index/resource_index/parent_prefix_path/name_description
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/environment/ament_prefix_path.sh
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/environment/ament_prefix_path.dsv
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/environment/path.sh
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/environment/path.dsv
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/local_setup.bash
+[0.392s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/local_setup.sh
+[0.393s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/local_setup.zsh
+[0.393s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/local_setup.dsv
+[0.393s] -- Installing: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/package.dsv
+[0.393s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/ament_index/resource_index/packages/name_description
+[0.393s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/cmake/name_descriptionConfig.cmake
+[0.393s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/cmake/name_descriptionConfig-version.cmake
+[0.393s] -- Up-to-date: /home/aimen/auto-weed-removal/ros2_ws/install/name_description/share/name_description/package.xml
+[0.393s] Invoked command in '/home/aimen/auto-weed-removal/ros2_ws/build/name_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/aimen/auto-weed-removal/ros2_ws/build/name_description

@@ -35,6 +35,28 @@
       </uri>
     </include>
 
+    <!--
+    <model name="cozy_cottage">
+        <pose>0 -2 -0.5  0 0 0</pose>
+        <static>true</static>
+        <link name="body">
+
+            <collision name='collision'>
+                <geometry>
+                    <mesh><uri>cozy_cottage/source/cozy-cottage-dae.dae</uri></mesh>
+                </geometry>
+            </collision>
+
+            <visual name="visual">
+            <geometry>
+                <mesh><uri>cozy_cottage/source/cozy-cottage-dae.dae</uri></mesh>
+            </geometry>
+            </visual>
+
+        </link>
+    </model>
+    -->
+
     <scene>
       <shadows>false</shadows>
     </scene>

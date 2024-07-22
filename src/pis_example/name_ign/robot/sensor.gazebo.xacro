@@ -151,5 +151,25 @@
                 </camera>
             </sensor>        
         </gazebo> 
+
+        <!-- DiffDrive plugin for odometry -->
+        <gazebo>
+            <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+                <ros>
+                    <namespace>${namespace}</namespace>
+                    <remapping>
+                        <remap from="odom" to="${namespace}/odom"/>
+                    </remapping>
+                </ros>
+                <left_joint>${namespace}/wheel_joint_left</left_joint>
+                <right_joint>${namespace}/wheel_joint_right</right_joint>
+                <wheel_separation>0.45</wheel_separation>
+                <wheel_radius>0.08</wheel_radius>
+                <command_timeout>0.1</command_timeout>
+                <publish_odometry>true</publish_odometry>
+                <odometry_frame>${namespace}/odom_frame</odometry_frame>
+                <global_frame>${namespace}/odom_frame</global_frame>
+            </plugin>
+        </gazebo>
     </xacro:macro>
 </robot>
